@@ -311,7 +311,7 @@ const ScanPayment: React.FC = () => {
           <div className={styles.qrCodeContent}>
             <div className={styles.qrCodeOverlay}>
               <PromptPayQRCode
-                phoneNumber="0967360797"
+                phoneNumber="" //ใส่เบอร์ promtpay
                 amount={totalPrice !== null ? totalPrice : undefined}
               />
             </div>
@@ -424,7 +424,7 @@ const ScanPayment: React.FC = () => {
           <div className={styles.rewardPopupOverlay}>
             <div className={styles.rewardPopup}>
               <img
-                src={Unsuccess} // เปลี่ยน yourImagePath เป็น path ของรูปภาพที่ต้องการใช้
+                src={Unsuccess}
                 alt="Time Up"
                 className={styles.popupImage} // คุณสามารถกำหนดสไตล์ให้กับรูปภาพได้
               />

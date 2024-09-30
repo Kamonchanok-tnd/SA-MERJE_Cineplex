@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Navbar from "../../components/navbar/navbar";
 import Poster from "../../assets/poster.jpg";
 import IconDate from "../../assets/icondate.png";
 import Icontime from "../../assets/icontime.png";

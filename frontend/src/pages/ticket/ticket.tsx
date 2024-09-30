@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/navbar";
 import ticket from "../../assets/ticket.png";
 import Poster from "../../assets/poster.jpg";
 import TicketQRCode from "../../components/ticketqrcode/ticketqrcode";
+
 import {
   GetShowtimeById,
   GetMovieById,

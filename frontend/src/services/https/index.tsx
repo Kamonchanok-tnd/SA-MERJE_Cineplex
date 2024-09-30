@@ -1,5 +1,4 @@
 import { MembersInterface } from "../../interfaces/IMember";
-import { MoviesInterface } from "../../interfaces/IMovie";
 import { ShowTimesInterface } from "../../interfaces/IShowtime";
 import { BookingResponse } from "../../interfaces/IBooking"; // Import Interface ของ Tickets
 import { RewardInterface } from "../../interfaces/IReward";

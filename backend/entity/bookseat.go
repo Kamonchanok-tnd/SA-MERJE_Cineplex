@@ -6,9 +6,9 @@ import (
 
 type BookSeat struct {
 	gorm.Model
-	SeatID uint `gorm:"not null"` // เชื่อมโยงกับที่นั่ง
+	SeatID uint `gorm:"not null"`
 	Seat   Seat `gorm:"foreignKey:SeatID"`
 
-	BookingID uint    `gorm:"not null"` // เชื่อมโยงกับการจอง
+	BookingID uint    `gorm:"not null"` 
 	Booking   Booking `gorm:"foreignKey:BookingID"`
 }

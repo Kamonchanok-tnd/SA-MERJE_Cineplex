@@ -37,7 +37,7 @@
   padding: 8px; /* เพิ่มช่องว่างในเซลล์ */
 }
 .ticketstatus .main-content{
-  height: 695px;
+  height: 100vh;
   background-color: white;
   overflow-y: hidden;
 }

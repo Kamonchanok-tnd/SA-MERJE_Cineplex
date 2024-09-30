@@ -29,7 +29,7 @@ func main() {
 		router.GET("/booked-seats/:showtimeID", controller.GetBookedSeats)
 		router.POST("/book-seats", controller.BookSeats) // เพิ่มเส้นทางสำหรับการจองที่นั่ง
 		router.PATCH("/release-seats", controller.ReleaseSeatsForUnfinishedTickets)
-		router.GET("/bookings/ticket/:ticketid", controller.GetBookingByTicketID)
+		router.GET("/bookings/ticket/:ticketid", controller.GetBookingByTicketID) //P
 		router.GET("/theater/:id", controller.GetTheaterByID)
 		router.GET("/showtimes/:id/time", controller.GetTimeByShowtime)  // เพิ่มเส้นทางสำหรับดึงเวลา showtime
 
@@ -75,23 +75,19 @@ func main() {
 		router.POST("/tickets", controller.CreateTicket)
 		router.PATCH("/ticket/:id", controller.UpdateTicket)
 		router.DELETE("/tickets/:id", controller.DeleteTicket)
-		router.PATCH("/tickets/status/:id", controller.UpdateTicketStatusAndPoints)
+		router.PATCH("/tickets/status/:id", controller.UpdateTicketStatusAndPoints) //P
 
 		// Payment Routes
-		router.GET("/payments", controller.ListPayments)
-	router.GET("/payment/:id", controller.GetPayment)
-	router.POST("/payments", controller.CreatePayment)
-	router.PATCH("/payments/:id", controller.UpdatePayment)
-	router.DELETE("/payments/:id", controller.DeletePayment)
-	router.GET("/payments/ticket/:ticketid", controller.GetPaymentByTicketID)
-	router.PATCH("/payments/status/:ticketID", controller.UpdatePaymentStatusByTicketID)
-	router.PATCH("/payments/upload-slip", controller.UpdatePaymentSlipByTicketID)
+		router.POST("/payments", controller.CreatePayment)
+		router.GET("/payments/ticket/:ticketid", controller.GetPaymentByTicketID)
+		router.PATCH("/payments/status/:ticketID", controller.UpdatePaymentStatusByTicketID)
+		router.PATCH("/payments/upload-slip", controller.UpdatePaymentSlipByTicketID)
 
 		// Reward Routes
         router.GET("/rewards/:id", controller.GetReward)        // ดึงข้อมูลรางวัลตาม ID
         router.POST("/rewards", controller.CreateReward)        // สร้างรางวัล
         router.PATCH("/rewards/:id", controller.UpdateReward)   // อัปเดตรางวัล
-		router.GET("/rewards/member/:member_id/discount", controller.GetDiscountRewardsByMemberID)
+		router.GET("/rewards/member/:member_id/discount", controller.GetDiscountRewardsByMemberID) //P
 
 		// CodeReward Routes
         router.POST("/codereward", controller.CreateCodeReward) // เส้นทางสำหรับสร้างโค้ดแลกเปลี่ยน

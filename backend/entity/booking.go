@@ -5,7 +5,7 @@ import "time"
 
 type Booking struct {
 	gorm.Model
-	BookingTime time.Time // เปลี่ยนเป็น time.Time
+	BookingTime time.Time 
 
 	MemberID   uint
 	ShowTimeID uint
