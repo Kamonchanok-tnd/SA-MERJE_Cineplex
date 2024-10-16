@@ -20,11 +20,12 @@ The system is designed to streamline the process of booking movie tickets, manag
 
 The system is divided into the following modules:
 
-1. **Ticket Management**: Allows users to book tickets, view booking history, and receive QR codes for entry.
-2. **Movie Management**: Provides the functionality for adding and managing movies.
-3. **Showtime Management**: Allows admins to define and update movie showtimes.
-4. **Payment Processing**: Handles user payments for ticket reservations, including integration with external services.
+1. **Seat Booking System**: Allows users to book tickets, view booking history, and receive QR codes for entry.
+2. **Movie Management System**: Provides the functionality for adding and managing movies.
+3. **Showtime Management System**: Allows admins to define and update movie showtimes.
+4. **Payment Processing System**: Handles user payments for ticket reservations, including integration with external services.
 5. **Rewards System**: Users can exchange points for rewards after ticket purchases.
+6. **Ticket Status Checking System**: Allows theater staff to scan QR codes from digital tickets at the theater entrance. The system verifies the ticket's validity by checking its status (valid, expired, or already used) in real-time before granting entry to the movie.
 
 ## Payment Processing
 
@@ -50,18 +51,15 @@ The **Payment Processing** system includes integration with external services fo
 - **Ticket Booking**: After logging in, users can select a movie and book seats.
 - **QR Code Scanning**: Theater staff can scan the QR code at the theater entrance to validate the ticket.
 
-## Contributors
-- Thannika Mangmee (B6507343)
-- Kongsawan Chanburi (B6508494)
-- Chanyanut Sodsri (B6508852)
-- Chanchai Lertsri (B6513535)
-- Kamonchanok Thanonndang (B6526405)
-- Supatsorn Soisuwan (B6526436)
+## Contributors and Responsibilities
+- Thannika Mangmee         Responsible for the Ticket Status Checking System.
+- Kongsawan Chanburi       Responsible for the Movie Management System.
+- Chanyanut Sodsri         Responsible for the Seat Booking System.
+- Chanchai Lertsri         Responsible for the Showtime Management System.
+- Kamonchanok Thanonndang  Responsible for the Payment Processing System, including integration with PromptPay.io and SlipOK.
+- Supatsorn Soisuwan       Responsible for the Rewards System.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Let me know if this looks good or if you’d like further adjustments!
