@@ -12,9 +12,8 @@ type Movie struct {
 	Director      string
 	Actor         string
 	Synopsis      string
-	ReleaseDate   string  // เปลี่ยนจาก string เป็น time.Time
-	Poster        []byte        `gorm:"type:blob"`                  // เก็บภาพโปสเตอร์เป็น blob
+	ReleaseDate   string  
+	Poster        []byte  `gorm:"type:blob"`     // เก็บภาพโปสเตอร์เป็น blob เนื่องจากมีความคมชัดมากกว่า
 
-	// ความสัมพันธ์กับ ShowTimes
 	Showtimes []ShowTimes `gorm:"foreignKey:MovieID"`
 }
