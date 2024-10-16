@@ -44,36 +44,6 @@ The **Payment Processing** system includes integration with external services fo
   - [PromptPay.io](https://promptpay.io/) for QR code generation.
   - [SlipOK](https://slipok.com/) for payment slip verification.
 
-## Installation
-
-To install and run the system locally, follow these steps:
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-repo/merje-cineplex.git
-    ```
-2. Install dependencies:
-    ```bash
-    cd backend
-    go mod download
-    ```
-    ```bash
-    cd frontend
-    npm install
-    ```
-
-3. Set up the database using the provided MySQL scripts located in the `database` folder.
-
-4. Start the backend server:
-    ```bash
-    go run main.go
-    ```
-
-5. Start the frontend application:
-    ```bash
-    npm start
-    ```
-
 ## Usage
 
 - **User Login**: Users can register and log in to manage their bookings.
@@ -81,7 +51,6 @@ To install and run the system locally, follow these steps:
 - **QR Code Scanning**: Theater staff can scan the QR code at the theater entrance to validate the ticket.
 
 ## Contributors
-
 - Thannika Mangmee (B6507343)
 - Kongsawan Chanburi (B6508494)
 - Chanyanut Sodsri (B6508852)
